@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14031"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchText_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Text" id="sin-6a-kFY">
+                            <color key="backgroundColor" red="0.0" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="addText" destination="AgC-eL-Hgc" id="KC3-fU-TyE"/>
+                            </connections>
+                        </button>
+                        <label alignment="left" text="Text Demo" id="CQv-y9-wa4"/>
+                        <label width="1" alignment="left" verticalAlignment="center" text="See  text here!" textAlignment="center" numberOfLines="0" minimumScaleFactor="0.5" id="wxM-SN-lKH">
+                            <fontDescription key="font" type="system" pointSize="24"/>
+                        </label>
+                        <imageView alignment="left" verticalAlignment="center" id="48c-Fx-4xk"/>
+                    </items>
+                    <connections>
+                        <outlet property="image" destination="48c-Fx-4xk" id="oHU-5q-Icx"/>
+                        <outlet property="label" destination="wxM-SN-lKH" id="7aj-ww-7lk"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
